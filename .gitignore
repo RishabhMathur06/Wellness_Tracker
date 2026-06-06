@@ -1,0 +1,50 @@
+# --- Secrets & local env ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# --- Python / Backend ---
+backend/venv/
+backend/.venv/
+**/__pycache__/
+**/*.py[cod]
+**/*.pyo
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/*.egg-info/
+**/.eggs/
+backend/dist/
+backend/build/
+backend/*.db
+backend/wellness.db
+backend/test_wellness.db
+
+# --- Node / Frontend ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/npm-debug.log*
+frontend/yarn-error.log*
+
+# --- OS & IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Misc ---
+.cursor/
+*.coverage
+htmlcov/
+.cache/
+

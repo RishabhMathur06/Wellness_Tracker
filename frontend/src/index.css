@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-darkBg text-lightText antialiased;
+  }
+
+  ::selection {
+    @apply bg-primary/30 text-white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full hover:bg-borderLight;
+  }
+}
+
+@layer components {
+  .page-bg {
+    @apply min-h-screen relative overflow-x-hidden;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% -20%, rgba(59, 130, 246, 0.18), transparent),
+      radial-gradient(ellipse 60% 50% at 100% 50%, rgba(139, 92, 246, 0.08), transparent),
+      radial-gradient(ellipse 50% 40% at 0% 80%, rgba(16, 185, 129, 0.08), transparent),
+      #0B1120;
+  }
+
+  .glass-card {
+    @apply bg-cardBg/80 backdrop-blur-xl border border-border/80 rounded-2xl shadow-card shadow-inner;
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300 hover:border-borderLight/60 hover:shadow-glow;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-primaryDark hover:from-primaryDark hover:to-primary
+           text-white font-semibold rounded-xl px-5 py-2.5
+           shadow-lg shadow-primary/20 transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 focus:ring-offset-darkBg
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none
+           active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply text-mutedText hover:text-lightText hover:bg-white/5
+           rounded-lg px-3 py-1.5 text-sm font-medium
+           transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary/40;
+  }
+
+  .input-field {
+    @apply w-full bg-darkBg/60 border border-border rounded-xl px-4 py-3
+           text-lightText text-sm placeholder:text-mutedText/60
+           focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/50
+           transition-all duration-200;
+  }
+
+  .section-title {
+    @apply font-display text-2xl font-bold text-lightText tracking-tight;
+  }
+
+  .section-subtitle {
+    @apply text-sm text-mutedText mt-1;
+  }
+
+  .tab-pill {
+    @apply flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium
+           text-mutedText transition-all duration-200
+           hover:text-lightText hover:bg-white/5
+           focus:outline-none focus:ring-2 focus:ring-primary/40;
+  }
+
+  .tab-pill-active {
+    @apply bg-gradient-to-r from-primary to-primaryDark text-white shadow-lg shadow-primary/25
+           hover:text-white hover:bg-gradient-to-r;
+  }
+
+  .score-low { @apply text-secondary; }
+  .score-mid { @apply text-warning; }
+  .score-high { @apply text-error; }
+
+  .badge {
+    @apply inline-flex items-center gap-1 text-xs font-medium px-2.5 py-1 rounded-full;
+  }
+
+  .badge-primary {
+    @apply badge bg-primary/15 text-primary border border-primary/20;
+  }
+
+  .badge-success {
+    @apply badge bg-secondary/15 text-secondary border border-secondary/20;
+  }
+
+  .badge-warning {
+    @apply badge bg-warning/15 text-warning border border-warning/20;
+  }
+}
