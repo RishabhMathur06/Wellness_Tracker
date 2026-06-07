@@ -1,6 +1,6 @@
 # Wellness Tracker
 
-AI-powered emotional wellness app with image emotion analysis, therapeutic chat, metrics dashboard, guardian email alerts, and user authentication.
+Students preparing for exams such as NEET, JEE, CUET, CAT, GATE, UPSC, and various board examinations often face stress, anxiety, burnout, self-doubt, and uncertainty. Therefore I have developed an AI-powered emotional wellness app with image emotion analysis, therapeutic chat, metrics dashboard, guardian email alerts, and user authentication that helps students track their mood, identify stress triggers, reflect on their emotions, and receive personalized wellness support throughout their academic journey.
 
 ## Tech stack
 
