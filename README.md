@@ -77,9 +77,6 @@ pytest app/tests -v
 |----------|----------|-------------|
 | `VITE_API_URL` | Production | e.g. `https://your-api.onrender.com/api/v1` |
 
-## Deploy free (Render)
-
-Recommended: **[Render](https://render.com)** free tier — backend + static frontend.
 
 ### Backend (Web Service)
 
@@ -119,7 +116,3 @@ Or use the included `render.yaml` blueprint for one-click setup (rename services
 - 7-day metrics dashboard
 - Weekly reports emailed to guardian
 - High stress/anxiety threshold alerts via Gmail
-
-## License
-
-MIT (or your course/project license)
